@@ -9,7 +9,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_screen);
+
+        // Top App Bar 설정
+        Toolbar toolbar = findViewById(R.id.top_app_bar);
+        setSupportActionBar(toolbar);
+
         diaryListView = findViewById(R.id.diary_list);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, diaryEntries);
@@ -43,9 +51,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int itemId = item.getItemId();
-                if (itemId == R.id.navigation_home) {
+                if (itemId == R.id.navigation_profile) {
                     // Home 화면으로 이동하는 코드
-                    startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                    startActivity(new Intent(MainActivity.this, ProfileActivity.class));
                     return true;
                 } else if (itemId == R.id.navigation_dashboard) {
                     // Dashboard 화면으로 이동하는 코드

@@ -22,6 +22,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MyDiaryActivity"/> <!-- MyDiaryActivity를 등록 -->
+        <activity android:name=".ProfileActivity"/> <!-- Activity를 등록 -->
+        <activity android:name=".NotificationsActivity"/> <!-- Activity를 등록 -->
+        <activity android:name=".DashboardActivity"/> <!-- Activity를 등록 -->
     </application>
 
 </manifest>

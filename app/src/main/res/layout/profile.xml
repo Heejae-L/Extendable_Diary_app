@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:title="notifications" />
+            app:title="my Profile" />
     </com.google.android.material.appbar.AppBarLayout>
 
 </LinearLayout>
