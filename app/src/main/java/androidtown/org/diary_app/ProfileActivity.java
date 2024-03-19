@@ -11,7 +11,7 @@ public class ProfileActivity extends AppCompatActivity { // AppCompatActivity를
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.profile); // 홈 화면의 레이아웃을 설정합니다.
+        setContentView(R.layout.activity_profile); // 홈 화면의 레이아웃을 설정합니다.
 
         // Top App Bar 설정
         Toolbar toolbar = findViewById(R.id.top_app_bar);

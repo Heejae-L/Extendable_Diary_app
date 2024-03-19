@@ -8,6 +8,6 @@ public class DashboardActivity extends AppCompatActivity { // AppCompatActivity�
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dashboard); // 홈 화면의 레이아웃을 설정합니다.
+        setContentView(R.layout.activity_dashboard); // 홈 화면의 레이아웃을 설정합니다.
     }
 }

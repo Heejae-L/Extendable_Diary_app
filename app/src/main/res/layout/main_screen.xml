@@ -18,6 +18,14 @@
             android:background="?attr/colorPrimary"
             app:title="Diary App" />
     </com.google.android.material.appbar.AppBarLayout>
+    <ImageButton
+        android:id="@+id/new_diary_button"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/new_diary"
+        android:layout_gravity="right"
+        android:scaleType="centerCrop"
+        android:padding="0dp"/>
 
     <ListView
         android:id="@+id/diary_list"

@@ -9,7 +9,7 @@ public class MyDiaryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.my_diary);
+        setContentView(R.layout.activity_diary);
 
         TextView diaryTextView = findViewById(R.id.diary_entry);
         String entryText = getIntent().getStringExtra("entry_text"); // MainActivity로부터 전달된 다이어리 항목 텍스트 가져오기
