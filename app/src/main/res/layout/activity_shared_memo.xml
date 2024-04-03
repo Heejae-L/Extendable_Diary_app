@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ExtraText">
+
+    <!-- Top Navigation Bar Placeholder -->
+    <!-- Include your actual toolbar layout here -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/shared_memo_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_app_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Our trip to Gangneung!!"
+        android:textSize="20dp"
+        tools:ignore="NotSibling" />
+
+    <HorizontalScrollView
+        android:id="@+id/profileImageScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shared_memo_entry"
+        android:layout_marginTop="34dp">
+
+        <!-- Container for Profile Images and Plus Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Profile Image A -->
+            <ImageView
+                android:id="@+id/profileImageA"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/profile_a" />
+
+            <!-- Profile Image B -->
+            <ImageView
+                android:id="@+id/profileImageB"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/profile_b" />
+
+            <!-- Profile Image C -->
+            <ImageView
+                android:id="@+id/profileImageC"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/profile_c" />
+
+            <!-- Plus Button -->
+            <ImageView
+                android:id="@+id/addProfileImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_add" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <GridView
+        android:id="@+id/calendarGridView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/profileImageScrollView"
+        android:numColumns="7"/>
+
+    <Button
+        android:id="@+id/memoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Memo"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/diaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diary"
+        android:layout_above="@id/memoButton"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"/>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>

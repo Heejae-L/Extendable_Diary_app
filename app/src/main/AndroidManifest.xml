@@ -23,8 +23,11 @@
         </activity>
         <activity android:name=".MyDiaryActivity"/> <!-- MyDiaryActivity를 등록 -->
         <activity android:name=".ProfileActivity"/> <!-- Activity를 등록 -->
-        <activity android:name=".NotificationsActivity"/> <!-- Activity를 등록 -->
+        <activity android:name=".CalendarActivity"/> <!-- Activity를 등록 -->
         <activity android:name=".DashboardActivity"/> <!-- Activity를 등록 -->
+        <activity android:name=".SharedHomeActivity"/> <!-- Activity를 등록 -->
+        <activity android:name=".SharedMemoActivity"/> <!-- Activity를 등록 -->
+        <activity android:name=".WriteDiaryActivity"/> <!-- Activity를 등록 -->
     </application>
 
 </manifest>
