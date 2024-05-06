@@ -28,6 +28,8 @@
         <activity android:name=".SharedHomeActivity"/> <!-- Activity를 등록 -->
         <activity android:name=".SharedMemoActivity"/> <!-- Activity를 등록 -->
         <activity android:name=".WriteDiaryActivity"/> <!-- Activity를 등록 -->
+        <activity android:name=".MyPaintBoard"/>
+        <activity android:name=".HappniesBank"/>
     </application>
 
 </manifest>
